@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+    <style>
+        table,tr,td,th{
+            border:1px solid red;
+        }
+    </style>
+       
+    </head>
+    <body>
+<script>
+    let arr=[{"StudentName":"swathi","Class":"10th","FatherName":"Kannaya","Dateofbirth":"03-sep-2006","Gender":"Female","Category":"General","MobileNumber":"56784538"},
+             {"StudentName":"ramya","Class":"11th","FatherName":"krishna","Dateofbirth":"04-dec-2007","Gender":"Female","Category":"General","MobileNumber":"56784538"},
+             {"StudentName":"suhasini","Class":"12th","FatherName":"kannaroa","Dateofbirth":"08-aug-2008","Gender":"Female","Category":"General","MobileNumber":"56784538"},
+             {"StudentName":"sirisha","Class":"10th","FatherName":"kamesh","Dateofbirth":"09-oct-2007","Gender":"Female","Category":"General","MobileNumber":"56784538"},
+            
+             {"StudentName":"samantha","Class":"11th","FatherName":"ramesh","Dateofbirth":"10-nov-2008","Gender":"Female","Category":"General","MobileNumber":"56784538"}];
+             document.writeln(`
+             <table >
+                <tr>
+                    <th>S.NO</th>
+                    <th>STUDENT NAME</th>
+                    <th>CLASS</th>
+                    <th>FATHER NAME</th>
+                    <th>DATE OF BIRTH</th>
+                    <th>GENDER</th>
+                    <th>CATEGORY</th>
+                    <th>MOBILE NUMBER</th>
+
+                  </tr> ` );
+                
+                  arr.forEach((element,index)=>{
+                      document.write(`<tr>
+                        <td>${index+1}</td>
+                        <td>${element.StudentName}</td>
+                        <td>${element.Class}</td>
+                        <td>${element.FatherName}</td>
+                         <td>${element.Dateofbirth} </td>
+                         <td>${element.Gender} </td>
+                         <td>${element.Category}</td>
+                         <td>${element.MobileNumber} </td>
+                         </tr>
+                         `)
+                        });
+                         document.write(`</table>`);
+                        
+                 
+             </script>
+             </body>
+             </html>
